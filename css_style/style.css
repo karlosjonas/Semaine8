@@ -68,6 +68,7 @@ p{
     box-sizing:border-box;
 }
 
+/*PORTFOLIOS*/
 
 #info {
     -webkit-border-radius:5px;
@@ -189,6 +190,7 @@ p{
                 font-size:9px;
             }
     
+ /*FOOTER*/
  
 footer{
     bottom:0;
@@ -216,6 +218,8 @@ iframe{
     width: 100%;
 }   
 
+/*CONTACT*/
+
 #nom, #prenom, #email, #textarea{
     margin: 10px;
 }
@@ -230,10 +234,7 @@ iframe{
 for_cont {
     text-align: center;
 }
-.leg {
-    margin: 0px 0px 0px 205px ;
-    
-}
+
 input, textarea {
     box-shadow: 1px 1px 0px #2896E7;
     background: #D3D3D3;
@@ -257,12 +258,23 @@ textarea{
     margin: 0px 0px 0px 205px ;
 }
 
+
+/*Media Queries*/
+
 /* #Tablet (Portrait) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
     .container {
         width: 768px; 
     }
-}
+    input, textarea {
+        width: auto;
+        
+    }
+    
+    
+}  
+    
+
 
 
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
@@ -279,7 +291,14 @@ textarea{
     #ads {
         display:none;
     }
-    
+    input, textarea {
+        width: 150px;
+        float: left;
+        
+    }
+    .contact {
+         width: 210px;
+    }
 }
 
 
@@ -293,7 +312,9 @@ textarea{
         display:none;
     }
     
+   
 }
+
 
 /* #Clearing */
 
